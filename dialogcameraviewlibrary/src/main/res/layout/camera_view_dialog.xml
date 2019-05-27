@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.camerakit.CameraKitView
+        android:id="@+id/cameraKitView"
+        app:camera_facing="back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/imgView"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabSwitch"
+            android:alpha="0.5"
+            android:src="@drawable/ic_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabCapture"
+            android:alpha="0.5"
+            android:src="@drawable/ic_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_loop"
+            android:visibility="gone"
+            android:alpha="0.5"
+            android:layout_marginEnd="16dp"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabDone"
+            android:src="@drawable/ic_done"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:alpha="0.5"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
