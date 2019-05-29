@@ -43,7 +43,7 @@ Refer to [this article](<https://jagar.me/post/opencamera2window/>) to find out 
 1. Create and object of `CameraViewDialog` and init it:
 ```java
 CameraViewDialog cameraViewDialog = new CameraViewDialog();
-        cameraViewDialog.init(context, image_path);
+cameraViewDialog.init(context, image_path);
 ```
 2. Handle results:
 ```java
